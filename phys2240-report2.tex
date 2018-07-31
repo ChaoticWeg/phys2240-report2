@@ -1,0 +1,46 @@
+\documentclass[12pt,letterpaper,titlepage]{report}
+
+%%% packages %%%
+
+\usepackage{geometry}
+
+%%% metadata %%%
+
+\newcommand{\myTitle}{Magnetic Field in a Current-Carrying Coil}
+\newcommand{\myName}{Shawn Lutch}
+\newcommand{\myPeriod}{PHYS 2240.503}
+
+\usepackage[pdftex,
+            pdfauthor={\myName{}},
+            pdfsubject={\myPeriod{}},
+            pdftitle={\myTitle{}},
+            pdfproducer={\myName{} via PDFTeX},
+            pdfcreator={pdflatex}]{hyperref}    
+
+%%% layout %%%
+
+\pagenumbering{gobble}
+\raggedright
+\geometry{
+    letterpaper,
+    lmargin=0.75in,
+    rmargin=0.75in,
+    tmargin=1in,
+    bmargin=1in
+}
+
+%%% document below %%%
+
+\begin{document}
+
+%% title page
+
+\title{\myTitle{}}
+\author{\myName{} \\ \myPeriod{}}
+\date{\today}
+\maketitle
+
+
+\end{document}
+
+%%% done %%%
