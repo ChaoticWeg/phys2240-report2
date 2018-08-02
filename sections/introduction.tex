@@ -1,4 +1,4 @@
-We use a magnetic field sensor to measure magnetic fields. Since magnetic fields are vector quantities, they have orthogonal components. We can attempt to measure these components separately by moving a magnetic field sensor in a single dimension.
+In this lab, we will move a magnetic field sensor through a current-carrying coil and record data about the magnetic field in order to compare changes in axial and radial components of the field. We will attach the magnetic field sensor to a rotary motion sensor in order to record the position of the magnetic field sensor relative to the coil.
 
 \bigskip
 When referring to the magnetic field created by a solenoid, we call the component that runs parallel to the vertical axis of the solenoid the \textbf{axial component} of the field; likewise, we call the component that runs perpendicular to the vertical axis of the solenoid the \textbf{radial component} of the field. The direction of each field component, as measured by the sensor, is relative to the orientation of the sensor. This direction is shown with positive and negative values.
@@ -10,16 +10,21 @@ The general equation for finding the magnetic field along the perpendicular axis
 B = \frac{\mu_0 N I R^2}{2 ( x^2 + R^2 )^{3/2}}
 \end{equation}
 
-where \textbf{$\mu_0$} $= 4 \pi \times 10^{-7}$ $T \cdot \frac{m}{A}$ is the permittivity of free space, \textbf{$I$} is the current through the coil, and \textbf{$x$} is the distance from the center of the coil.
-
-\bigskip
-The equation for finding the magnetic field of a long solenoid with $n$ turns per unit length, we use \textbf{Equation \ref{long_solenoid}}:
+where \textbf{$\mu_0$} $= 4 \pi \times 10^{-7}$ $T \cdot \frac{m}{A}$ is the permittivity of free space, \textbf{$I$} is the current through the coil, and \textbf{$x$} is the distance from the center of the coil. To find the magnetic field of a long solenoid with $n$ turns per unit length, we use \textbf{Equation \ref{long_solenoid}}:
 
 \begin{equation} \label{long_solenoid}
 B = \mu_0 n I
 \end{equation}
 
-where $\mu_0$ is again the permittivity of free space, shown above. To be considered a \textit{long} solenoid, the length of the coil inside the solenoid must be significantly longer than the diameter of the coil. Solenoids that do not fit this description are referred to as \textit{short} solenoids. Also, Equation \ref{long_solenoid} fails when approaching the ends of the solenoid, where the magnetic field strength begins to decrease.
+where $\mu_0$ is again the permittivity of free space, shown above. Equation \ref{long_solenoid} fails when approaching the ends of the solenoid, where the magnetic field strength begins to decrease.
 
 \bigskip
-For short solenoids, we are not able to use either Equation \ref{single_coil} because the length of the coil is too long, and we are not able to use Equation \ref{long_solenoid} because the length of the coil is too short. Instead, the two equations provide bounds on the value of the magnetic field.
+To be considered a \textit{long} solenoid, the length of the coil inside the solenoid must be significantly longer than the diameter of the coil. Solenoids that do not fit this description are referred to as \textit{short} solenoids. For short solenoids, we are not able to use either Equation \ref{single_coil} because the length of the coil is too long, and we are not able to use Equation \ref{long_solenoid} because the length of the coil is too short. Instead, the two equations provide bounds on the value of the magnetic field.
+
+\bigskip
+\begin{minipage}{\textwidth}
+    \centering
+    Specifications for the Solenoid \\
+    \medskip
+    \input{data/solenoid_stats}
+\end{minipage}
